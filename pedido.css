@@ -90,7 +90,7 @@ nav>a:hover {
     display: flex;
     gap: 6px;
     background: #ffffff;
-    padding: 6px;
+    padding: 25px;
     border-radius: 15px;
     align-items: center;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
@@ -170,9 +170,7 @@ nav>a:hover {
 #lista {
     text-align: start;
     max-height: 300px;
-    /* quando passar disso aparece o scroll */
     overflow-y: auto;
-    /* mostra a barra só quando precisar */
     padding: 8px;
 }
 
