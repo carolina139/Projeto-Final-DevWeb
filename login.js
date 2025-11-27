@@ -6,13 +6,13 @@ function logar() {
   } else {
     if (
       /*Nome@gmail.com*/ login == "carol@gmail.com" &&
-      /*RA*/ (senha == "1291392522019" || "123")
+      /*RA*/ (senha == "1291392522019" || senha == "123")
     ) {
       alert("Sucesso");
       location.href = "pedido.html";
     } else if (
       /*Nome@gmail.com*/ login == "carlos@gmail.com" &&
-      /*RA*/ (senha == "1291392522017" || "123")
+      /*RA*/ (senha == "1291392522017" || senha == "123")
     ) {
       alert("Sucesso");
       location.href = "pedido.html";
@@ -21,5 +21,3 @@ function logar() {
     }
   }
 }
-
-
