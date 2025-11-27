@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="pedido.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo"
+            src="img/logo.png"
+        >
+
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="index.html#produtos">Produtos</a>
+            <a href="index.html#avaliacoes">Avaliações</a>
+            <a href="index.html#contato">Contato</a>
+            <a href="login.html" class="btn-logout">Logout</a>
+        </nav>
+
+    </header>
+    <main>
+        <section class="carrinho" id="carrinho">
+            <div class="carrinho-container">
+                <div class="card-produto1">
+                    <img class="ft-produto" src="img/BigMac.png">
+                    <div class="info">
+                        <h3 class="name">Big Mac</h3>
+                        <p>Dois hambúrgueres (100% carne bovina), alface americana, queijo processado sabor cheddar, molho especial, cebola, picles e pão com gergelim.</p>
+                        <div class="preco">
+                            <h2>R$ 25,00</h2>
+                            <button class="btn-add" onclick="add(this)">Adicionar ao Pedido</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-produto2">
+                    <img class="ft-produto" src="img/DuploQuarteirao.png">
+                    <div class="info">
+                        <h3 class="name">Duplo Quarteirão</h3>
+                        <p>Dois hambúrgueres (carne 100% bovina), mostarda, ketchup, cebola, queijo processado sabor cheddar e pão com gergelim.</p>
+                        <div div class="preco">
+                            <h2>R$ 25,00</h2>
+                            <button class="btn-add" onclick="add(this)">Adicionar ao Pedido</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-produto3">
+                    <img class="ft-produto" src="img/TastyTurbo.png">
+                    <div class="info">
+                        <h3 class="name">Tasty Turbo 1 carne</h3>
+                        <p>Composto por um hambúrguer de carne 100% bovina, o icônico molho tasty, queijo processado sabor emental, tomate, alface, cebola, tudo isso no pão com gergelim.</p>
+                        <div class="preco">
+                            <h2>R$ 25,00</h2>
+                            <button class="btn-add" onclick="add(this)">Adicionar ao Pedido</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pedido">
+                    <h3>Pedido</h3>
+                    <ul id="lista">
+                        <p>Ainda não há produtos.</p>
+                    </ul>
+                    <h2 class="total-pedido">Total: R$ <span id="total"> 0</span></h2>
+                    <button class="btn-final" onclick="finalizar()">Finalizar Pedido</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 MacDonald's. Todos os direitos reservados.</p>
+        <div>
+            <a href="https://wa.me/5513123456789?text=Olá." target="_blank">
+                <img id="icon" src="https://imagepng.org/wp-content/uploads/2017/08/WhatsApp-icone.png"
+                    alt="Icone do Zap"></a>
+            <a href="https://www.instagram.com" target="_blank"><img id="icon"
+                    src="https://imagepng.org/wp-content/uploads/2017/08/instagram-icone-icon.png"
+                    alt="Icone do Instagram"></a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img id="icon" src="https://imagepng.org/facebook-icone/facebook-icone-icon/"
+                    alt="Icone do Facebook"></a>
+        </div>
+    </footer>
+
+    <script src="pedido.js"></script>
+</body>
+
+</html>

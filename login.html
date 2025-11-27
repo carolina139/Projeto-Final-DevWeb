@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo"
+            src="img/logo.png"
+        >
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="index.html#produtos">Produtos</a>
+            <a href="index.html#avaliacoes">Avaliações</a>
+            <a href="index.html#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login" class="login">
+            <div class="login-container">
+                <h2>Login</h2>
+                <form class="login-form">
+                    <input id="email" type="email" placeholder="Email" required><br>
+                    <input id="senha" type="password" placeholder="Senha" required><br>
+                    <button onclick="logar(); return false">Entrar</button>
+                </form>
+                <p>Não tem conta? <a id="cadastro" href="#">Cadastre-se</a></p>
+                <p><a id="troca-senha>" href="#">Esqueceu a Senha?</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 MacDonald's. Todos os direitos reservados.</p>
+        <div>
+            <a href="https://wa.me/5513123456789?text=Olá." target="_blank">
+                <img id="icon" src="https://imagepng.org/wp-content/uploads/2017/08/WhatsApp-icone.png"
+                    alt="Icone do Zap"></a>
+            <a href="https://www.instagram.com" target="_blank"><img id="icon"
+                    src="https://imagepng.org/wp-content/uploads/2017/08/instagram-icone-icon.png"
+                    alt="Icone do Instagram"></a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img id="icon" src="https://imagepng.org/facebook-icone/facebook-icone-icon/"
+                    alt="Icone do Facebook"></a>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
