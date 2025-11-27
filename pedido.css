@@ -14,7 +14,7 @@ header {
     background-color: #da291c;
     display: flex;
     justify-content: space-between;
-    padding: 50px 60px;
+    padding: 35px 60px;
     align-items: center;
     position: sticky;
     top: 0;
@@ -169,6 +169,11 @@ nav>a:hover {
 
 #lista {
     text-align: start;
+    max-height: 300px;
+    /* quando passar disso aparece o scroll */
+    overflow-y: auto;
+    /* mostra a barra só quando precisar */
+    padding: 8px;
 }
 
 .pedido h2 {
